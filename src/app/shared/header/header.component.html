@@ -1,0 +1,38 @@
+<div class="container">
+    <img class="menuBarOpen" src="assets/img/menuOpen.svg" alt="" (click)="menuOpen=true">
+    <div class="menuNav">
+        <a class="nav" href="">HOME</a>
+        <a class="nav" href="#servizi">SERVIZI</a>
+        <a class="nav" href="#chi-siamo">CHI SIAMO</a>
+        <a class="nav" href="javascript:void(0)" (click)="apriModale()">CONTATTI</a>
+    </div>
+
+    <div class="loghiSocial">
+        <a href="https://www.instagram.com/" target="_blank">
+            <img src="../../../assets/img/instagram.svg" alt="">
+        </a>
+        <a href="https://www.facebook.com/" target="_blank">
+            <img src="../../../assets/img/facebook.svg" alt="">
+        </a>
+        <a href="https://www.x.com/" target="_blank">
+            <img src="../../../assets/img/x.svg" alt="">
+        </a>
+    </div>
+</div>
+
+<div class="menuBar" [class.open]="menuOpen">
+    <div class="menuBarHeader">
+        <img src="assets/img/menuClose.svg" alt="" (click)="menuOpen=false">
+    </div>
+
+    <div class="menuBarNav">
+        <a class="nav" href="">HOME</a>
+        <a class="nav" href="#servizi">SERVIZI</a>
+        <a class="nav" href="#chi-siamo">CHI SIAMO</a>
+        <a class="nav" href="javascript:void(0)" (click)="apriModale()">CONTATTI</a>
+    </div>
+</div>
+
+<div class="containerContatti">
+    <app-contatti *ngIf="apriContatti" (chiudiModale)="chiudiModale()" ></app-contatti>
+</div>

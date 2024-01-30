@@ -1,0 +1,135 @@
+.container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    z-index: 5;
+    background-color: rgb(2, 2, 92);
+    width: 100%;
+    position: relative;
+    height: 50px;
+
+    .menuBarOpen {
+        cursor: pointer;
+        height: 25px;
+        width: 25px;
+        object-fit: contain;
+        display: none;
+
+        /* Medium devices (tablets, 768px and up) */
+        @media (max-width: 768px) {
+            display: block;
+        }
+
+    }
+
+
+    .loghiSocial {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 50px;
+
+        img {
+            height: 25px;
+            width: 25px;
+            margin: 0 5px;
+        }
+    }
+
+    .menuNav {
+        text-align: center;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .nav {
+            text-decoration: none;
+            display: inline;
+            margin: 0 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            user-select: none;
+            color: white;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        /* Medium devices (tablets, 768px and up) */
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+}
+
+.menuBar {
+    margin-left: -300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: rgba(2, 2, 92, 0.8);
+    z-index: 6;
+    transition: .5s;
+
+
+
+    /* Extra large devices (large desktops, 1200px and up) */
+    @media (max-width: 1200px) {
+        display: none;
+    }
+
+    /* Large devices (desktops, 992px and up) */
+    @media (max-width: 992px) {
+        display: none;
+    }
+
+    /* Medium devices (tablets, 768px and up) */
+    @media (max-width: 768px) {
+        display: block;
+    }
+
+    &.open {
+        margin-left: 0px;
+    }
+
+    .menuBarHeader {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+
+        img {
+            margin-left: auto;
+            object-fit: contain;
+            height: 25px;
+            width: 25px;
+        }
+    }
+
+    .menuBarNav {
+        .nav {
+            text-decoration: none;
+            color: white;
+            display: block;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 50px;
+            margin-top: 10px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.containerContatti {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

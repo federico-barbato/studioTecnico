@@ -1,0 +1,59 @@
+#servizi {
+    height: 1px;
+    width: 100%;
+}
+
+.container {
+    h2 {
+        width: 100%;
+        text-align: center;
+        margin-top: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+    }
+
+    .container-articoli {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+
+        /* Medium devices (tablets, 768px and up) */
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+
+        .servizio {
+            height: calc(50vh - 25px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            /* Small devices (landscape phones, 576px and up) */
+            @media (max-width: 576px) {
+                flex-direction: column;
+                min-height: 400px;
+                text-align: center;
+                padding: 25px;
+            }
+
+            img {
+                height: 150x;
+                width: 150px;
+                padding: 25px;
+            }
+
+
+            .presentazione {
+                h2 {
+                    color: white;
+                }
+
+                p {
+                    color: white;
+                }
+            }
+        }
+    }
+}

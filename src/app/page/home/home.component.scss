@@ -1,0 +1,76 @@
+.container {
+    margin: 10px;
+    background-image: url(../../../assets/img/villa.jpeg);
+    height: calc(100vh - 50px);
+    background-size: cover;
+    background-position: center;
+
+    .headerContainer {
+        position: fixed;
+        z-index: 5;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .nameStudio {
+        background: transparent;
+        backdrop-filter: blur(20px);
+        text-align: center;
+        position: absolute;
+        bottom: 50px;
+        right: 50px;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .containerPresentazione {
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        .presentazione {
+            align-items: center;
+            justify-content: center;
+            width: 25%;
+            background-color: white;
+            color: black;
+            padding: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+
+            position: absolute;
+            top: 100px;
+            left: 50px;
+
+            box-shadow: -10px -10px 0px rgba(2, 2, 92, 0.5);
+
+
+            /* Small devices (landscape phones, 576px and up) */
+            @media (max-width: 576px) {
+
+                background-color: rgba(255, 255, 255, 0.75);
+                box-shadow: 0 0 0 white;
+            }
+
+            h2 {
+                text-align: center;
+                margin: 10px 0;
+            }
+
+            p {
+                text-align: center;
+                margin: 10px 0;
+            }
+
+
+
+            /* Small devices (landscape phones, 576px and up) */
+            @media (max-width: 576px) {
+                width: 100%;
+                position: sticky;
+                margin-top: 100px;
+                max-height: 100px;
+            }
+        }
+    }
+}
